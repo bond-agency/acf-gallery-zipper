@@ -135,7 +135,7 @@ class ACF_Gallery_Zipper {
     $zip->open( $zip_path, ZipArchive::CREATE );
 
     foreach ( $paths as $path ) {
-      $zip->addFile( $zip_path, basename( $zip_path ) );
+      $zip->addFile( $path, basename( $path ) );
     }
     $zip->close();
     return $zip_path;
