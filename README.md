@@ -11,7 +11,15 @@ This plugin assumes that you have [ACF](https://www.advancedcustomfields.com/) i
 
 ## Installation
 
-Download the [zip](https://github.com/bond-agency/acf-gallery-zipper/archive/master.zip) and install the plugin. Use the [hooks](#filters-actions-api) to define the post type and field you want to zip.
+Download the [zip](https://github.com/bond-agency/acf-gallery-zipper/archive/master.zip) and install the plugin. Use the [hooks](#filters--actions-api) to define the post type and field you want to zip.
+
+## Usage
+
+The plugin creates a REST endpoint for downloading zip files from the given post. You can get the ACF gallery field contents as zip by accessing that url:
+
+```
+<your-website-url>/wp-json/acf-gallery-zipper/v1/zip/<post-id>
+```
 
 ## Filters & Actions API
 
@@ -41,7 +49,7 @@ Example:
 ```php
 add_filter( 'acf_gallery_zipper_field_name', 'acf_gallery_zipper_change_default_field_name' );
 function acf_gallery_zipper_change_default_field_name( $field_name ) {
-  rerurn 'my_gallery_field_name';
+  return 'my_gallery_field_name';
 }
 ```
 

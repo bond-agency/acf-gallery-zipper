@@ -72,6 +72,7 @@
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
     <exclude name="WordPress.WhiteSpace.PrecisionAlignment.Found" />
     <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+    <exclude name="PEAR.Functions.FunctionCallSignature.OpeningIndent" />
 
     <!-- Free-form commenting rules -->
     <exclude name="Squiz.Commenting" />

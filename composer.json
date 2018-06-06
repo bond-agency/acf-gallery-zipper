@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "acf-gallery-zipper",
+  "description": "Plugin creates a REST endpoint for zipping an ACF gallery field contents.",
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.2",
     "wp-coding-standards/wpcs": "^0.14"
