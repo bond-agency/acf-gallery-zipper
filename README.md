@@ -1,6 +1,7 @@
 # ACF Gallery Zipper
 
 ![release](https://img.shields.io/github/release/bond-agency/acf-gallery-zipper.svg)
+![license](https://img.shields.io/github/license/bond-agency/acf-gallery-zipper.svg)
 
 WordPress plugin for zipping ACF Gallery field contents.
 
