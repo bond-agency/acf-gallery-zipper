@@ -132,7 +132,7 @@ class ACF_Gallery_Zipper {
   protected function create_zip_file( $paths, $filename ) {
     // create new zip object
     $zip      = new ZipArchive();
-    $zip_path = plugin_dir_path( __FILE__ ) . 'zip_cache/' . $filename . '.zip';
+    $zip_path = plugin_dir_path( __FILE__ ) . 'temp/' . $filename . '.zip';
     $zip->open( $zip_path, ZipArchive::CREATE );
 
     foreach ( $paths as $path ) {
