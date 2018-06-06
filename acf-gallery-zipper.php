@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ACF Gallery Zipper
- * Plugin URI: XXX
+ * Plugin URI: https://github.com/bond-agency/acf-gallery-zipper/
  * Description: Plugin creates a REST endpoint for zipping an ACF gallery field contents.
  * Version: 1.0.0
  * Author: Bond Agency
