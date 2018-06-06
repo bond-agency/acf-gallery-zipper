@@ -53,6 +53,45 @@ function acf_gallery_zipper_change_default_field_name( $field_name ) {
 }
 ```
 
+#### acf_gallery_zipper_filename
+
+Use this filter to change the zip filename. Default: `<post slug>`.
+
+Example:
+
+```php
+add_filter( 'acf_gallery_zipper_filename', 'acf_gallery_zipper_change_default_filename' );
+function acf_gallery_zipper_change_default_filename( $filename ) {
+  return $filename . '-suffix'; // .zip will be added automatically.
+}
+```
+
+#### acf_gallery_zipper_use_cache
+
+Use this filter to change the cache usage. By default the zip files are not stored anywhere but deleted right after they are sent to the user. Default: `false`.
+
+Example:
+
+```php
+add_filter( 'acf_gallery_zipper_use_cache', 'acf_gallery_zipper_change_default_use_cache' );
+function acf_gallery_zipper_change_default_use_cache( $use_cache ) {
+  return true;
+}
+```
+
+#### acf_gallery_zipper_removal_recurrence
+
+Use this filter to change the cache removal recurrence. Default: `daily`. Possible values: `hourly`, `twicedaily` and `daily`.
+
+Example:
+
+```php
+add_filter( 'acf_gallery_zipper_removal_recurrence', 'acf_gallery_zipper_removal_change_default_recurrence' );
+function acf_gallery_zipper_removal_recurrence( $recurrence ) {
+  return 'hourly';
+}
+```
+
 ## Contributing
 
 We are open for suggestions so open an issue if you have any feature requests or bug reports. Please do not create a pull request without creating related issue first.
