@@ -1,0 +1,20 @@
+{
+  // Set the default
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.insertSpaces": true,
+  "editor.useTabStops": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "phpcs.enable": true,
+  "phpcs.standard": "WordPress",
+  "phpcs.executablePath": "./vendor/bin/phpcs",
+  "phpcs.autoConfigSearch": true,
+  "phpcs.showSources": true,
+  "phpcbf.enable": true,
+  "phpcbf.executablePath": "./vendor/bin/phpcbf",
+  "phpcbf.standard": "./phpcs.xml",
+  "phpcs.composerJsonPath": "./composer.json",
+  "phpcbf.onsave": true,
+  "phpcbf.debug": false,
+}
